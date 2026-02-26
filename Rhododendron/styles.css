@@ -2,6 +2,7 @@
 
 * {
 box-sizing: border-box;
+    font-family: Arial, sans-serif
 }
 
 body {
@@ -20,6 +21,7 @@ header {
     height: 100vh;
     background-image: url("/Rhododendron/rhododendron.jpeg");
     background-size: cover; 
+    background-position:center center
 }
 
 #RhododendronTitle {
@@ -31,6 +33,11 @@ header {
 #RhododendronTitle h1 {
     position: absolute;
     bottom:0 ;
-    left: 0 ;
+    left: 1em ;
+    color: black;
+    font-size: 2.5em;
+    width: calc(100vw - 2em); 
+    background-color: yellow;
 
 }
+
