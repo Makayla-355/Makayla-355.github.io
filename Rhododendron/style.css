@@ -22,13 +22,13 @@ header {
     background-size: cover; 
 }
 
-#Rhododendrum Title {
+#RhododendrumTitle {
     position:  absolute
     width: 100vw;
     height: 100vh;
 }
 
-#Rhododendrum Title h1 {
+#RhododendrumTitle h1 {
     position: absolute;
     bottom:0 ;
     left: 0 ;
