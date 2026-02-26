@@ -1,5 +1,7 @@
+/* mobile-first design for Pacific Rhododendron layout */
+
 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
@@ -10,27 +12,25 @@ body {
 header {
     width: 100vw;
     height: 100vh;
-    position: relative;
 }
 
 #Picture {
     position: absolute; 
     width: 100vw;
     height: 100vh;
-    background-image: url("Pacific Rhododendron 2 - Gary Monroe-1.jpeg");
+    background-image:url("Pacific Rhododendron 2 - Gary Monroe-1.jpeg");
     background-size: cover; 
-    background-position: center;
 }
 
 #RhododendronTitle {
-    position: absolute;
+    position:  absolute
     width: 100vw;
     height: 100vh;
 }
 
 #RhododendronTitle h1 {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    color: white;
+    bottom:0 ;
+    left: 0 ;
+
 }
