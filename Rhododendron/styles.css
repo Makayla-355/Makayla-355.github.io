@@ -18,7 +18,7 @@ header {
     position: absolute; 
     width: 100vw;
     height: 100vh;
-    background-image:url("Rhododendron/rhododendron.jpeg");
+    background-image:url("rhododendron.jpeg");
     background-size: cover; 
 }
 
