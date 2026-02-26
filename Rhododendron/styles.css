@@ -41,3 +41,21 @@ header {
 
 }
 
+@media screen and (orientation: landscape) {
+
+    #Picture {
+        width: 50vw;
+    }
+
+    #RhododendronTitle {
+        width: 50vw;
+        left: 50vw;
+        background-color: #e5be29;
+        
+    }
+
+    #RhododendronTitle; h1{
+        width:45vw
+    }
+}
+
