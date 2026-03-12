@@ -5,148 +5,151 @@
 }
 
 body {
+    background-color: #f3efef;
+    color: #111;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f8e7e7;
-    color: #2b1616;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
 .page-container {
     width: 90%;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1rem 0 2rem;
 }
 
-/* mobile first */
+/* MOBILE FIRST */
 .recipe-grid {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+}
+
+.page-title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
 }
 
 .hero-image img {
     width: 100%;
     display: block;
-    border: 1px solid #b9a9a9;
-}
-
-.recipe-summary h1 {
-    font-size: 2rem;
-    margin-bottom: 0.75rem;
+    border: 2px solid #c9c9c9;
 }
 
 .icon-row {
-    font-size: 2rem;
-    letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
-}
-
-.info-box {
-    background-color: rgba(120, 90, 90, 0.12);
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.info-box p {
-    margin-bottom: 0.5rem;
-}
-
-.serving-box {
-    margin-top: 1rem;
-}
-
-.multiplier-controls {
-    width: 120px;
     display: flex;
-    justify-content: space-between;
+    gap: 0.75rem;
+    font-size: 2rem;
     align-items: center;
-    border: 1px solid #6f5a5a;
-    background-color: #fff7f7;
-    padding: 0.5rem 1rem;
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
 }
 
-.ingredients h2,
-.instructions h2 {
-    font-size: 2.2rem;
+.instructions h2,
+.ingredients h2 {
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
-.ingredients h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
-}
-
-.ingredients ul,
-.instructions ol {
+.instructions ol,
+.ingredients ul {
     padding-left: 1.5rem;
 }
 
+.instructions li,
 .ingredients li,
-.instructions li {
-    margin-bottom: 0.6rem;
-    font-size: 1.1rem;
+.recipe-info p,
+.ingredients h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
 }
 
-.instructions {
-    border: 1px solid #6f5a5a;
+.ingredients {
+    border: 2px solid #666;
+    border-radius: 6px;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.18);
+    background-color: transparent;
+}
+
+.recipe-info {
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 footer {
     margin-top: 2rem;
+    font-size: 0.85rem;
     text-align: center;
-    font-size: 0.9rem;
 }
 
 footer a {
-    color: #2b1616;
+    color: #111;
 }
 
-/* desktop layout based on your wireframe */
+/* DESKTOP */
 @media (min-width: 900px) {
     .recipe-grid {
         display: grid;
-        grid-template-columns: 2fr 1.4fr;
+        grid-template-columns: 1.6fr 1fr;
         grid-template-areas:
-            "image summary"
-            "instructions summary";
+            "title title"
+            "image ingredients"
+            "icons ingredients"
+            "instructions info";
         gap: 1.5rem;
         align-items: start;
+    }
+
+    .page-title {
+        grid-area: title;
     }
 
     .hero-image {
         grid-area: image;
     }
 
-    .recipe-summary {
-        grid-area: summary;
+    .icon-row {
+        grid-area: icons;
+        align-self: start;
     }
 
     .instructions {
         grid-area: instructions;
     }
 
-    .recipe-summary h1 {
-        font-size: 3rem;
-        line-height: 1.1;
+    .ingredients {
+        grid-area: ingredients;
     }
 
-    .icon-row {
-        font-size: 2.2rem;
+    .recipe-info {
+        grid-area: info;
+        align-self: start;
+        margin-top: 0;
     }
 
-    .ingredients h2,
-    .instructions h2 {
-        font-size: 3rem;
+    .page-title h1 {
+        font-size: 3.4rem;
+        margin-bottom: 0.5rem;
     }
 
-    .ingredients li,
+    .instructions h2,
+    .ingredients h2 {
+        font-size: 2.8rem;
+    }
+
     .instructions li,
-    .info-box p {
-        font-size: 1rem;
+    .ingredients li,
+    .recipe-info p,
+    .ingredients h3 {
+        font-size: 1.1rem;
+    }
+
+    .hero-image img {
+        max-height: 420px;
+        object-fit: cover;
+    }
+
+    .ingredients {
+        padding: 1.25rem;
     }
 }
