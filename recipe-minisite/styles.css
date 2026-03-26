@@ -208,3 +208,6 @@ footer a {
 		gap: 1rem;
 	}
 }
+.nav-links ul {
+	padding-left: 1rem;
+}
