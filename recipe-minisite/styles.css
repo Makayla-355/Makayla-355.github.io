@@ -150,4 +150,61 @@ footer a {
     .ingredients {
         padding: 1.25rem;
     }
+}/* ===== NAV MENU (Lesson 36) ===== */
+
+.nav {
+	background-color: #f8d7da;
+	padding: 0.5rem 1rem;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+.menu-toggle {
+	font-size: 1.5rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.nav-links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: none;
+	flex-direction: column;
+}
+
+.nav-links li {
+	margin: 0.5rem 0;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: #333;
+}
+
+.nav-links.show {
+	display: flex;
+}
+
+/* Desktop view */
+@media (min-width: 700px) {
+	.menu-toggle {
+		display: none;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
 }
