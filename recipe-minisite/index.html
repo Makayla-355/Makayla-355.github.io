@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,12 +5,107 @@
 	<!-- meta tags and title -->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Page Title</title>
+	<title>Makayla's Recipes</title>
 
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
 	<style>
 		/* in-file CSS here */
+
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			background-color: #fffaf7;
+			color: #333;
+		}
+
+		img {
+			max-width: 100%;
+			display: block;
+		}
+
+		header {
+			text-align: center;
+			padding: 1.5rem 1rem;
+			background-color: #f8d7da;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 2rem;
+		}
+
+		header p {
+			margin-top: 0.5rem;
+			font-size: 1rem;
+		}
+
+		.hero {
+			padding: 1rem;
+		}
+
+		.hero img {
+			border-radius: 10px;
+			width: 100%;
+			height: auto;
+		}
+
+		.intro {
+			padding: 1rem;
+			text-align: center;
+		}
+
+		.recipe-list {
+			padding: 1rem;
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 1rem;
+		}
+
+		.recipe-card {
+			background-color: white;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			padding: 1rem;
+			text-align: center;
+		}
+
+		.recipe-card h2 {
+			margin-top: 0;
+			font-size: 1.25rem;
+		}
+
+		.recipe-card p {
+			margin-bottom: 1rem;
+		}
+
+		.recipe-card a {
+			display: inline-block;
+			text-decoration: none;
+			background-color: #f8d7da;
+			color: #333;
+			padding: 0.5rem 1rem;
+			border-radius: 6px;
+		}
+
+		footer {
+			text-align: center;
+			padding: 1rem;
+			font-size: 0.9rem;
+			background-color: #f8d7da;
+			margin-top: 1rem;
+		}
+
+		@media (min-width: 700px) {
+			.recipe-list {
+				grid-template-columns: 1fr 1fr;
+			}
+
+			header h1 {
+				font-size: 2.5rem;
+			}
+		}
 	</style>
 
 	<!-- external and internal JavaScript -->
@@ -24,6 +118,46 @@
 <body>
 
 	<!-- HTML elements here -->
+
+	<header>
+		<h1>Makayla's Recipes</h1>
+		<p>Simple recipes I wanted to recreate and share.</p>
+	</header>
+
+	<section class="hero">
+		<img src="homepage-food.jpg" alt="A table with homemade food">
+	</section>
+
+	<section class="intro">
+		<h2>Welcome</h2>
+		<p>
+			This page is a collection of recipe pages I made for class. Each recipe has its own page with ingredients, cooking time, and instructions.
+		</p>
+	</section>
+
+	<main class="recipe-list">
+		<section class="recipe-card">
+			<h2>Strawberry Oatmeal Cookies</h2>
+			<p>Soft cookies made with oats and freeze-dried strawberries.</p>
+			<a href="strawberry-oatmeal-cookies.html">View Recipe</a>
+		</section>
+
+		<section class="recipe-card">
+			<h2>One Pan Happy Plate</h2>
+			<p>A cheesy chicken and rice recipe made all in one pan.</p>
+			<a href="one-pan-happy-plate.html">View Recipe</a>
+		</section>
+
+		<section class="recipe-card">
+			<h2>Chicken Caesar Smashed Tacos</h2>
+			<p>A quick taco recipe with chicken and Caesar salad.</p>
+			<a href="chicken-caesar-smashed-tacos.html">View Recipe</a>
+		</section>
+	</main>
+
+	<footer>
+		<p>Made by Makayla</p>
+	</footer>
 
 </body>
 </html>
