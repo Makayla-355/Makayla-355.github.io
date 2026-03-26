@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3efef;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+}
+
+.page-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1rem 0 2rem;
+}
+
+/* MOBILE FIRST */
+.recipe-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.page-title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
+    border: 2px solid #c9c9c9;
+}
+
+.icon-row {
+    display: flex;
+    gap: 0.75rem;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.instructions h2,
+.ingredients h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.instructions ol,
+.ingredients ul {
+    padding-left: 1.5rem;
+}
+
+.instructions li,
+.ingredients li,
+.recipe-info p,
+.ingredients h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.ingredients {
+    border: 2px solid #666;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: transparent;
+}
+
+.recipe-info {
+    font-size: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+footer a {
+    color: #111;
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+    .recipe-grid {
+        display: grid;
+        grid-template-columns: 1.6fr 1fr;
+        grid-template-areas:
+            "title title"
+            "image ingredients"
+            "icons ingredients"
+            "instructions info";
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .page-title {
+        grid-area: title;
+    }
+
+    .hero-image {
+        grid-area: image;
+    }
+
+    .icon-row {
+        grid-area: icons;
+        align-self: start;
+    }
+
+    .instructions {
+        grid-area: instructions;
+    }
+
+    .ingredients {
+        grid-area: ingredients;
+    }
+
+    .recipe-info {
+        grid-area: info;
+        align-self: start;
+    }
+
+    .page-title h1 {
+        font-size: 3.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .instructions h2,
+    .ingredients h2 {
+        font-size: 2.8rem;
+    }
+
+    .instructions li,
+    .ingredients li,
+    .recipe-info p,
+    .ingredients h3 {
+        font-size: 1.1rem;
+    }
+
+    .hero-image img {
+        max-height: 420px;
+        object-fit: cover;
+    }
+
+    .ingredients {
+        padding: 1.25rem;
+    }
+}
