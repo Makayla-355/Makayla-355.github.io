@@ -1,0 +1,61 @@
+/* mobile-first design for Pacific Rhododendron layout */
+
+* {
+box-sizing: border-box;
+    font-family: Arial, sans-serif
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+}
+
+#Picture {
+    position: absolute; 
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/Rhododendron/rhododendron.jpeg");
+    background-size: cover; 
+    background-position:center center
+}
+
+#RhododendronTitle {
+    position:  absolute
+    width: 100vw;
+    height: 100vh;
+}
+
+#RhododendronTitle h1 {
+    position: absolute;
+    bottom:0 ;
+    left: 1em ;
+    color: black;
+    font-size: 2.5em;
+    width: calc(100vw - 2em); 
+    background-color: yellow;
+
+}
+
+@media screen and (orientation: landscape) {
+
+    #Picture {
+        width: 50vw;
+    }
+
+    #RhododendronTitle {
+        width: 50vw;
+        left: 50vw;
+        background-color: #e5be29;
+        
+    }
+
+    #RhododendronTitle; h1{
+        width:45vw
+    }
+}
+
