@@ -59,3 +59,18 @@ header {
     }
 }
 
+/* DARK MODE */
+body.darkMode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* header in dark mode */
+body.darkMode header {
+  background-color: #1e1e1e;
+}
+
+/* sections */
+body.darkMode section {
+  background-color: #1a1a1a;
+}
