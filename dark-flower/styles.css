@@ -1,14 +1,14 @@
-/* mobile-first design for Pacific Rhododendron layout */
+/* mobile-first layout */
 
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 body {
     padding: 0;
     margin: 0;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
@@ -60,24 +60,29 @@ header {
 
 /* DARK MODE */
 body.darkMode {
-  background-color: #1b2a1f; /* deep green */
-  color: #e6f2e6;
+    background-color: #1b2a1f;
+    color: #e6f2e6;
 }
 
 body.darkMode header {
-  background-color: #243c2b;
+    background-color: #243c2b;
 }
 
 body.darkMode section {
-  background-color: #2e4a36;
+    background-color: #2e4a36;
+    color: #e6f2e6;
+}
+
+body.darkMode #Picture {
+    filter: brightness(0.5);
 }
 
 body.darkMode #RhododendronTitle h1 {
-  background-color: #3f6b4f;
-  color: white;
+    background-color: #3f6b4f;
+    color: white;
 }
 
-
+/* BUTTON */
 #toggleDarkMode {
     padding: 10px 15px;
     margin: 10px;
