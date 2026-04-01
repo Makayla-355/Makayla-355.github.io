@@ -1,4 +1,4 @@
-<script src="scripts.js" defer></script>
+
 // set up DOM loading event listener 
 document.addEventListener("DOMContentLoaded", function () {
 
