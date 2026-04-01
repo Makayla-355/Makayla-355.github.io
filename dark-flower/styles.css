@@ -1,8 +1,8 @@
 /* mobile-first design for Pacific Rhododendron layout */
 
 * {
-box-sizing: border-box;
-    font-family: Arial, sans-serif
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -13,36 +13,35 @@ body {
 header {
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 
 #Picture {
-    position: absolute; 
+    position: absolute;
     width: 100vw;
     height: 100vh;
     background-image: url("/Rhododendron/rhododendron.jpeg");
-    background-size: cover; 
-    background-position:center center
+    background-size: cover;
+    background-position: center center;
 }
 
 #RhododendronTitle {
-    position:  absolute
+    position: absolute;
     width: 100vw;
     height: 100vh;
 }
 
 #RhododendronTitle h1 {
     position: absolute;
-    bottom:0 ;
-    left: 1em ;
+    bottom: 0;
+    left: 1em;
     color: black;
     font-size: 2.5em;
-    width: calc(100vw - 2em); 
+    width: calc(100vw - 2em);
     background-color: yellow;
-
 }
 
 @media screen and (orientation: landscape) {
-
     #Picture {
         width: 50vw;
     }
@@ -51,39 +50,51 @@ header {
         width: 50vw;
         left: 50vw;
         background-color: #e5be29;
-        
     }
 
-    #RhododendronTitle; h1{
-        width:45vw
+    #RhododendronTitle h1 {
+        width: 45vw;
     }
 }
 
 /* DARK MODE */
 body.darkMode {
-  background-color: #121212;
-  color: #f1f1f1;
+    background-color: #121212;
+    color: #f1f1f1;
 }
 
-/* header in dark mode */
 body.darkMode header {
-  background-color: #1e1e1e;
+    background-color: #1e1e1e;
 }
 
-/* sections */
 body.darkMode section {
-  background-color: #1a1a1a;
+    background-color: #1a1a1a;
+    color: #f1f1f1;
 }
+
+body.darkMode #RhododendronTitle {
+    background-color: #2b2b2b;
+}
+
+body.darkMode #RhododendronTitle h1 {
+    background-color: #444;
+    color: white;
+}
+
 #toggleDarkMode {
-  padding: 10px 15px;
-  margin: 10px;
-  border: none;
-  border-radius: 8px;
-  background-color: #2c2c2c;
-  color: white;
-  cursor: pointer;
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
 }
 
 #toggleDarkMode:hover {
-  opacity: 0.85;
+    opacity: 0.85;
 }
