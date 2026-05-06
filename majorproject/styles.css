@@ -150,6 +150,8 @@ input[type="submit"]:hover {
 	background-color: #111;}
 	.card img {
 	width: 100%;
+	max-height: 350px;
+	object-fit: cover;
 	border-radius: 10px;
 	margin-bottom: 15px;
 }
