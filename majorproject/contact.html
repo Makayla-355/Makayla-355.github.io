@@ -37,3 +37,50 @@
 	</nav>
 
 	<main>
+        <section class="hero">
+
+			<h2>Contact</h2>
+
+			<p>
+				Have a question, suggestion, or favorite ATEEZ song recommendation?
+				Use this form to share your thoughts.
+			</p>
+
+		</section>
+        <section class="form-section">
+
+			<form action="thankyou.html" method="get">
+
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+
+				<label for="topic">What is your message about?</label>
+				<select id="topic" name="topic">
+					<option value="question">Question</option>
+					<option value="suggestion">Suggestion</option>
+					<option value="song">Song Recommendation</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="6"></textarea>
+
+				<input type="submit" value="Submit">
+
+			</form>
+
+		</section>
+</main>
+
+	<footer>
+		<p>
+			ATEEZ A-Z | Created for Major Project DTC 355 |
+			Images used for educational purposes.
+		</p>
+	</footer>
+
+</body>
+</html>
