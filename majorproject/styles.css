@@ -149,14 +149,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background-color: #111;}
 
-	.card img {
-	.card img {
+.card img {
 	width: 100%;
-	height: auto;
-	max-height: 400px;
+	height: 350px;
 	object-fit: contain;
 	border-radius: 10px;
 	margin-bottom: 15px;
 	display: block;
-}
+	background-color: #111;
 }
