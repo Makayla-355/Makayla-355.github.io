@@ -23,14 +23,16 @@ header p {
 }
 nav {
     background-color: #333;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
-    text-decoration: none;
+	text-decoration: none;
+	margin: 8px;
+	display: inline-block;
+	font-size: 14px;
 }
 
 main {
