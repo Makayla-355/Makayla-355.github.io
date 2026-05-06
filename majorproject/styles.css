@@ -148,3 +148,8 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
 	background-color: #111;}
+	.card img {
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
