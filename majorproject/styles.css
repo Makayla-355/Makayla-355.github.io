@@ -107,3 +107,44 @@ footer {
 	}
 
 }
+/* FORM STYLING */
+
+.form-section {
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+	max-width: 700px;
+	margin: 0 auto;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	font-weight: 600;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-family: 'Poppins', sans-serif;
+}
+
+input[type="submit"] {
+	background-color: #333;
+	color: white;
+	border: none;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #111;
